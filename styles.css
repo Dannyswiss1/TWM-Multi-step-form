@@ -33,6 +33,7 @@ body{
   box-shadow: 5px 5px 10px rgb(229, 229, 229);
   display: flex;
   padding: 1rem;
+  position: relative;
 }
 
 .side-bar{
@@ -95,13 +96,12 @@ body{
 .info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   margin-left: 10%;
 }
 
 .header {
-  margin-bottom: auto;
   padding-top: 2.5rem;
   line-height: 2.5rem;
 }
@@ -126,6 +126,7 @@ body{
   background-color: var(--Marine-blue);
   color: white;
   cursor: pointer;
+  align-self: flex-end;
 }
 
 .form{
@@ -167,5 +168,81 @@ input, :after, :before {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 85%;
+  width: 55%;
+  position: absolute;
+  bottom: 0px;
+}
+
+/* Step 2 */
+
+.plan-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  margin-block: 7%;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.plan {
+  border: 2px solid var(--Light-gray);
+  border-radius: 7px;
+  width: 150px;
+  height: 170px;
+  cursor: pointer;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.plan-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.plan-info h3 {
+  color: var(--Marine-blue);
+}
+
+.plan-info p {
+  color: var(--Cool-gray);
+}
+
+.duration{
+  background-color: var(--Magnolia);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.monthly,
+.yearly {
+  color: var(--Cool-gray);
+  font-weight: 500;
+}
+
+.sw-active {
+  color: var(--Marine-blue);
+}
+
+
+.prev-stp {
+  border: none;
+  font-weight: 600;
+  background-color: transparent;
+  border-radius: 7px;
+  color: var(--Cool-gray);
+  cursor: pointer;
 }
