@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Multi-Step-Form</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/428d8025c6.js"></script>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="./images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+          rel="stylesheet"/>
+        <title>Frontend Mentor | Multi-step form</title>
+        <link rel="stylesheet" href="styles.css" />
+      </head>
   <body id="personal-info">
     <section class="step-page">
         <div class="side-bar">
-            <div class="steps">
-                <h3>1</h3>
+            <div class="steps active">
+                <h3 class="circle">1</h3>
                 <div>
                     <p class="active-step">Step 1</p>
                     <h2>YOUR INFO</h2>
@@ -19,7 +29,7 @@
             </div>
 
             <div class="steps">
-                <h3>2</h3>
+                <h3 class="circle">2</h3>
                 <div>
                     <p class="active-step">Step 2</p>
                     <h2>SELECT PLAN</h2>
@@ -27,7 +37,7 @@
             </div>
 
             <div class="steps">
-                <h3>3</h3>
+                <h3 class="circle">3</h3>
                 <div>
                     <p>Step 3</p>
                     <h2>ADD-ONS</h2>
@@ -35,7 +45,7 @@
             </div>
 
             <div class="steps">
-                <h3>4</h3>
+                <h3 class="circle">4</h3>
                 <div>
                     <p>Step 4</p>
                     <h2>SUMMARY</h2>
@@ -46,29 +56,35 @@
 
         <div class="info">
 
-            <div class="Header">
+            <div class="header">
                 <h2 class="personal">Personal Info</h2>
-                <p class="p-contact">Please provide your name, email address and phone number</p>
+                <p class="p-exp">Please provide your name, email address and phone number</p>
             </div>
             
-            <form action="">
+            <form action="" class="form">
                 <div class="details">
                     <label for="name">Name</label>
-                    <input type="text" placeholder="Danny Swiss" id="name">
+                    <input type="text" placeholder="e.g. Danny Swiss" id="name">
                 </div>
 
                 <div class="details">
-                    <label for="email">Email</label>
-                    <input type="email" placeholder="dannyswiss@mastereos.com" id="email">
+                    <label for="email">Email Address</label>
+                    <input type="email" placeholder="e.g. dannyswiss@mastereos.com" id="email">
                 </div>
 
                 <div class="details">
                     <label for="tel">Phone Number</label>
-                    <input type="tel" placeholder="+1 234 567 890" id="phone">
+                    <input type="tel" placeholder="e.g. +1 234 567 890" id="phone">
                 </div> 
+
+                <div class="controls">
+                    <p style="display: none;" class="back-1">Go back</p>
+                    <button class="nxt-btn">Next Step</button>
+                </div>
+
             </form>
 
-            <div class="plan-container">
+            <!-- <div class="plan-container">
                 <div class="plans">
                     <div class="arcade-con">
                         <img src="images/assets/images/icon-arcade.svg" alt="">
@@ -92,9 +108,9 @@
                             <h3>Pro</h3>
                             <p class="price">$15/mo</p>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="duration">
+                <!-- <div class="duration">
                     <p class="">Monthly</p>
                     <img class="swtich switch-off" src="images/assets/images/switch2.png" alt="">
                     <p>Yearly</p>
@@ -170,11 +186,9 @@
                     <span>+$14/mo</span>
                 </div>
             </div>
+        -->
 
-            <div class="controls">
-                <p class="back-1">Go back</p>
-                <button class="nxt-btn">Next Step</button>
-            </div>
+           
            
         </div>
 
