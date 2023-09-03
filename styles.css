@@ -246,3 +246,38 @@ input, :after, :before {
   color: var(--Cool-gray);
   cursor: pointer;
 }
+
+
+.add-container{
+  height:55vh;
+}
+.add{
+  border: 1px solid;
+  margin-top: 20px;
+  height:13vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width:80%;
+  border-radius: 10px;
+}
+.add-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.add-text h2{
+  font-size: 18px;
+  color: var(--Marine-blue);
+}
+.add-text p{
+  font-size:16px;
+  margin-top:5px;
+  color:var(--Cool-gray)
+}
+.add span{
+  color:var(--Marine-blue)
+}
+/* .box-1{
+  border: 1px solid;
+} *
